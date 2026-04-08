@@ -1,0 +1,819 @@
+{
+  "show": "Required Drinking",
+  "slug": "rd",
+  "schedule": "tue-thu",
+  "timezone": "America/New_York",
+  "publishTime": "05:00",
+  "buzzsproutId": 2608128,
+  "accentColor": "#C8860A",
+  "episodes": [
+    {
+      "num": 0,
+      "title": "Trailer: 100 Cocktails You Need to Know",
+      "date": "2026-04-05",
+      "status": "live",
+      "duration": 68,
+      "buzzId": 18969358
+    },
+    {
+      "num": 1,
+      "title": "Margarita",
+      "date": "2026-04-07",
+      "status": "live",
+      "duration": 199,
+      "buzzId": 18967787
+    },
+    {
+      "num": 2,
+      "title": "Old Fashioned",
+      "date": "2026-04-09",
+      "status": "live",
+      "duration": 205,
+      "buzzId": 18967788
+    },
+    {
+      "num": 3,
+      "title": "Negroni",
+      "date": "2026-04-14",
+      "status": "live",
+      "duration": 173,
+      "buzzId": 18967789
+    },
+    {
+      "num": 4,
+      "title": "Espresso Martini",
+      "date": "2026-04-16",
+      "status": "live",
+      "duration": 204,
+      "buzzId": 18967766
+    },
+    {
+      "num": 5,
+      "title": "Daiquiri",
+      "date": "2026-04-21",
+      "status": "live",
+      "duration": 204,
+      "buzzId": 18967767
+    },
+    {
+      "num": 6,
+      "title": "Whiskey Sour",
+      "date": "2026-04-23",
+      "status": "live",
+      "duration": 207,
+      "buzzId": 18967768
+    },
+    {
+      "num": 7,
+      "title": "Martini",
+      "date": "2026-04-28",
+      "status": "live",
+      "duration": 186,
+      "buzzId": 18967769
+    },
+    {
+      "num": 8,
+      "title": "Mojito",
+      "date": "2026-04-30",
+      "status": "live",
+      "duration": 199,
+      "buzzId": 18967770
+    },
+    {
+      "num": 9,
+      "title": "Manhattan",
+      "date": "2026-05-05",
+      "status": "produced",
+      "duration": 185,
+      "buzzId": null
+    },
+    {
+      "num": 10,
+      "title": "Moscow Mule",
+      "date": "2026-05-07",
+      "status": "produced",
+      "duration": 198,
+      "buzzId": null
+    },
+    {
+      "num": 11,
+      "title": "Aperol Spritz",
+      "date": "2026-05-12",
+      "status": "produced",
+      "duration": 180,
+      "buzzId": null
+    },
+    {
+      "num": 12,
+      "title": "Paloma",
+      "date": "2026-05-14",
+      "status": "produced",
+      "duration": 182,
+      "buzzId": null
+    },
+    {
+      "num": 13,
+      "title": "Cosmopolitan",
+      "date": "2026-05-19",
+      "status": "produced",
+      "duration": 196,
+      "buzzId": null
+    },
+    {
+      "num": 14,
+      "title": "Piña Colada",
+      "date": "2026-05-21",
+      "status": "produced",
+      "duration": 196,
+      "buzzId": null
+    },
+    {
+      "num": 15,
+      "title": "Bloody Mary",
+      "date": "2026-05-26",
+      "status": "produced",
+      "duration": 191,
+      "buzzId": null
+    },
+    {
+      "num": 16,
+      "title": "Mai Tai",
+      "date": "2026-05-28",
+      "status": "produced",
+      "duration": 198,
+      "buzzId": null
+    },
+    {
+      "num": 17,
+      "title": "French 75",
+      "date": "2026-06-02",
+      "status": "produced",
+      "duration": 198,
+      "buzzId": null
+    },
+    {
+      "num": 18,
+      "title": "Gin and Tonic",
+      "date": "2026-06-04",
+      "status": "produced",
+      "duration": 206,
+      "buzzId": null
+    },
+    {
+      "num": 19,
+      "title": "Boulevardier",
+      "date": "2026-06-09",
+      "status": "produced",
+      "duration": 209,
+      "buzzId": null
+    },
+    {
+      "num": 20,
+      "title": "Amaretto Sour",
+      "date": "2026-06-11",
+      "status": "produced",
+      "duration": 203,
+      "buzzId": null
+    },
+    {
+      "num": 21,
+      "title": "Long Island Iced Tea",
+      "date": "2026-06-16",
+      "status": "produced",
+      "duration": 201,
+      "buzzId": null
+    },
+    {
+      "num": 22,
+      "title": "Pornstar Martini",
+      "date": "2026-06-18",
+      "status": "produced",
+      "duration": 192,
+      "buzzId": null
+    },
+    {
+      "num": 23,
+      "title": "Caipirinha",
+      "date": "2026-06-23",
+      "status": "produced",
+      "duration": 194,
+      "buzzId": null
+    },
+    {
+      "num": 24,
+      "title": "Sidecar",
+      "date": "2026-06-25",
+      "status": "produced",
+      "duration": 186,
+      "buzzId": null
+    },
+    {
+      "num": 25,
+      "title": "Dark 'n' Stormy",
+      "date": "2026-06-30",
+      "status": "produced",
+      "duration": 217,
+      "buzzId": null
+    },
+    {
+      "num": 26,
+      "title": "Gimlet",
+      "date": "2026-07-02",
+      "status": "produced",
+      "duration": 200,
+      "buzzId": null
+    },
+    {
+      "num": 27,
+      "title": "Sazerac",
+      "date": "2026-07-07",
+      "status": "produced",
+      "duration": 211,
+      "buzzId": null
+    },
+    {
+      "num": 28,
+      "title": "Penicillin",
+      "date": "2026-07-09",
+      "status": "produced",
+      "duration": 199,
+      "buzzId": null
+    },
+    {
+      "num": 29,
+      "title": "Tom Collins",
+      "date": "2026-07-14",
+      "status": "produced",
+      "duration": 184,
+      "buzzId": null
+    },
+    {
+      "num": 30,
+      "title": "Pisco Sour",
+      "date": "2026-07-16",
+      "status": "produced",
+      "duration": 210,
+      "buzzId": null
+    },
+    {
+      "num": 31,
+      "title": "Mint Julep",
+      "date": "2026-07-21",
+      "status": "produced",
+      "duration": 205,
+      "buzzId": null
+    },
+    {
+      "num": 32,
+      "title": "Aviation",
+      "date": "2026-07-23",
+      "status": "produced",
+      "duration": 204,
+      "buzzId": null
+    },
+    {
+      "num": 33,
+      "title": "Bee's Knees",
+      "date": "2026-07-28",
+      "status": "produced",
+      "duration": 213,
+      "buzzId": null
+    },
+    {
+      "num": 34,
+      "title": "Americano",
+      "date": "2026-07-30",
+      "status": "produced",
+      "duration": 206,
+      "buzzId": null
+    },
+    {
+      "num": 35,
+      "title": "Clover Club",
+      "date": "2026-08-04",
+      "status": "produced",
+      "duration": 230,
+      "buzzId": null
+    },
+    {
+      "num": 36,
+      "title": "Vodka Martini",
+      "date": "2026-08-06",
+      "status": "produced",
+      "duration": 209,
+      "buzzId": null
+    },
+    {
+      "num": 37,
+      "title": "Gin Fizz",
+      "date": "2026-08-11",
+      "status": "produced",
+      "duration": 198,
+      "buzzId": null
+    },
+    {
+      "num": 38,
+      "title": "Paper Plane",
+      "date": "2026-08-13",
+      "status": "produced",
+      "duration": 191,
+      "buzzId": null
+    },
+    {
+      "num": 39,
+      "title": "Last Word",
+      "date": "2026-08-18",
+      "status": "produced",
+      "duration": 209,
+      "buzzId": null
+    },
+    {
+      "num": 40,
+      "title": "Corpse Reviver #2",
+      "date": "2026-08-20",
+      "status": "produced",
+      "duration": 208,
+      "buzzId": null
+    },
+    {
+      "num": 41,
+      "title": "Bramble",
+      "date": "2026-08-25",
+      "status": "produced",
+      "duration": 199,
+      "buzzId": null
+    },
+    {
+      "num": 42,
+      "title": "Oaxaca Old Fashioned",
+      "date": "2026-08-27",
+      "status": "produced",
+      "duration": 209,
+      "buzzId": null
+    },
+    {
+      "num": 43,
+      "title": "Zombie",
+      "date": "2026-09-01",
+      "status": "produced",
+      "duration": 197,
+      "buzzId": null
+    },
+    {
+      "num": 44,
+      "title": "Tequila Sunrise",
+      "date": "2026-09-03",
+      "status": "produced",
+      "duration": 200,
+      "buzzId": null
+    },
+    {
+      "num": 45,
+      "title": "Gin Basil Smash",
+      "date": "2026-09-08",
+      "status": "produced",
+      "duration": 200,
+      "buzzId": null
+    },
+    {
+      "num": 46,
+      "title": "Jungle Bird",
+      "date": "2026-09-10",
+      "status": "produced",
+      "duration": 195,
+      "buzzId": null
+    },
+    {
+      "num": 47,
+      "title": "Fitzgerald",
+      "date": "2026-09-15",
+      "status": "produced",
+      "duration": 198,
+      "buzzId": null
+    },
+    {
+      "num": 48,
+      "title": "Mezcal Margarita",
+      "date": "2026-09-17",
+      "status": "produced",
+      "duration": 211,
+      "buzzId": null
+    },
+    {
+      "num": 49,
+      "title": "Southside",
+      "date": "2026-09-22",
+      "status": "produced",
+      "duration": 198,
+      "buzzId": null
+    },
+    {
+      "num": 50,
+      "title": "Hanky Panky",
+      "date": "2026-09-24",
+      "status": "produced",
+      "duration": 217,
+      "buzzId": null
+    },
+    {
+      "num": 51,
+      "title": "Negroni Sbagliato",
+      "date": "2026-09-29",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 52,
+      "title": "Ramos Gin Fizz",
+      "date": "2026-10-01",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 53,
+      "title": "Old Cuban",
+      "date": "2026-10-06",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 54,
+      "title": "Painkiller",
+      "date": "2026-10-08",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 55,
+      "title": "Carajillo",
+      "date": "2026-10-13",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 56,
+      "title": "Naked and Famous",
+      "date": "2026-10-15",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 57,
+      "title": "Hemingway Daiquiri",
+      "date": "2026-10-20",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 58,
+      "title": "Irish Coffee",
+      "date": "2026-10-22",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 59,
+      "title": "Vieux Carré",
+      "date": "2026-10-27",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 60,
+      "title": "Rob Roy",
+      "date": "2026-10-29",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 61,
+      "title": "Rusty Nail",
+      "date": "2026-11-03",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 62,
+      "title": "Whiskey Highball",
+      "date": "2026-11-05",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 63,
+      "title": "Chartreuse Swizzle",
+      "date": "2026-11-10",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 64,
+      "title": "Spicy Paloma",
+      "date": "2026-11-12",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 65,
+      "title": "Morgenthaler Amaretto Sour",
+      "date": "2026-11-17",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 66,
+      "title": "Tommy's Margarita",
+      "date": "2026-11-19",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 67,
+      "title": "Mezcal Boulevardier",
+      "date": "2026-11-24",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 68,
+      "title": "Singapore Sling",
+      "date": "2026-11-26",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 69,
+      "title": "Vesper",
+      "date": "2026-12-01",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 70,
+      "title": "El Diablo",
+      "date": "2026-12-03",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 71,
+      "title": "Missionary's Downfall",
+      "date": "2026-12-08",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 72,
+      "title": "Three Dots and a Dash",
+      "date": "2026-12-10",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 73,
+      "title": "Pisco Punch",
+      "date": "2026-12-15",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 74,
+      "title": "Remember the Maine",
+      "date": "2026-12-17",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 75,
+      "title": "Sherry Cobbler",
+      "date": "2026-12-22",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 76,
+      "title": "Garibaldi",
+      "date": "2026-12-24",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 77,
+      "title": "Suffering Bastard",
+      "date": "2026-12-29",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 78,
+      "title": "Tiki IBA",
+      "date": "2026-12-31",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 79,
+      "title": "Grasshopper",
+      "date": "2027-01-05",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 80,
+      "title": "Jack Rose",
+      "date": "2027-01-07",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 81,
+      "title": "Bamboo",
+      "date": "2027-01-12",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 82,
+      "title": "Gold Rush",
+      "date": "2027-01-14",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 83,
+      "title": "Trinidad Sour",
+      "date": "2027-01-19",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 84,
+      "title": "Brown Derby",
+      "date": "2027-01-21",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 85,
+      "title": "Planter's Punch",
+      "date": "2027-01-26",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 86,
+      "title": "Peach Bellini",
+      "date": "2027-01-28",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 87,
+      "title": "Harvey Wallbanger",
+      "date": "2027-02-02",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 88,
+      "title": "Batanga",
+      "date": "2027-02-04",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 89,
+      "title": "Cuba Libre",
+      "date": "2027-02-09",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 90,
+      "title": "Rabo de Galo",
+      "date": "2027-02-11",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 91,
+      "title": "Cardinale",
+      "date": "2027-02-16",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 92,
+      "title": "Godfather",
+      "date": "2027-02-18",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 93,
+      "title": "Don's Special Daiquiri",
+      "date": "2027-02-23",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 94,
+      "title": "Grand Margarita",
+      "date": "2027-02-25",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 95,
+      "title": "Pornstar Martini IBA Spec",
+      "date": "2027-03-02",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 96,
+      "title": "Black Russian",
+      "date": "2027-03-04",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 97,
+      "title": "White Russian",
+      "date": "2027-03-09",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 98,
+      "title": "Spritz Veneziano",
+      "date": "2027-03-11",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 99,
+      "title": "Paloma Rosa",
+      "date": "2027-03-16",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 100,
+      "title": "Death in the Afternoon",
+      "date": "2027-03-18",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    }
+  ]
+}

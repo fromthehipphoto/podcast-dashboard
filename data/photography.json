@@ -1,0 +1,819 @@
+{
+  "show": "Photography Knowledge",
+  "slug": "photography",
+  "schedule": "mon-fri",
+  "timezone": "America/New_York",
+  "publishTime": "07:00",
+  "buzzsproutId": null,
+  "accentColor": "#c8553d",
+  "episodes": [
+    {
+      "num": 0,
+      "title": "Trailer",
+      "date": "2026-04-06",
+      "status": "live",
+      "duration": 89,
+      "buzzId": 18973707
+    },
+    {
+      "num": 1,
+      "title": "The Exposure Triangle Is a Lie",
+      "date": "2026-04-08",
+      "status": "live",
+      "duration": 158,
+      "buzzId": 18983463
+    },
+    {
+      "num": 2,
+      "title": "The Two Second Rule for Better Compositions",
+      "date": "2026-04-09",
+      "status": "live",
+      "duration": 137,
+      "buzzId": 18975976
+    },
+    {
+      "num": 3,
+      "title": "Why Your Indoor Photos Look Yellow",
+      "date": "2026-04-10",
+      "status": "live",
+      "duration": 138,
+      "buzzId": 18975977
+    },
+    {
+      "num": 4,
+      "title": "The Chin-Down Secret to Flattering Portraits",
+      "date": "2026-04-13",
+      "status": "live",
+      "duration": 147,
+      "buzzId": 18975978
+    },
+    {
+      "num": 5,
+      "title": "The Shot List That Saves Every Wedding",
+      "date": "2026-04-14",
+      "status": "live",
+      "duration": 138,
+      "buzzId": 18975979
+    },
+    {
+      "num": 6,
+      "title": "Portrait Mode on Your Phone Is Lying to You",
+      "date": "2026-04-15",
+      "status": "live",
+      "duration": 145,
+      "buzzId": 18975980
+    },
+    {
+      "num": 7,
+      "title": "The Only Three Edits Every Photo Needs",
+      "date": "2026-04-16",
+      "status": "live",
+      "duration": 148,
+      "buzzId": 18975981
+    },
+    {
+      "num": 8,
+      "title": "The One Camera Setting That Fixes 90% of Blurry Photos",
+      "date": "2026-04-17",
+      "status": "live",
+      "duration": 154,
+      "buzzId": 18975982
+    },
+    {
+      "num": 9,
+      "title": "Intentional Camera Movement: Painting with Your Shutter",
+      "date": "2026-04-20",
+      "status": "live",
+      "duration": 147,
+      "buzzId": 18975983
+    },
+    {
+      "num": 10,
+      "title": "Why Megapixels Don't Matter (Mostly)",
+      "date": "2026-04-21",
+      "status": "live",
+      "duration": 166,
+      "buzzId": 18975985
+    },
+    {
+      "num": 11,
+      "title": "Shoot Through the Mess: Finding Clean Backgrounds Anywhere",
+      "date": "2026-04-22",
+      "status": "live",
+      "duration": 149,
+      "buzzId": 18975986
+    },
+    {
+      "num": 12,
+      "title": "The Window Light Portrait Anyone Can Take",
+      "date": "2026-04-23",
+      "status": "live",
+      "duration": 151,
+      "buzzId": 18975987
+    },
+    {
+      "num": 13,
+      "title": "Back Button Focus Changed Everything",
+      "date": "2026-04-24",
+      "status": "live",
+      "duration": 154,
+      "buzzId": 18975988
+    },
+    {
+      "num": 14,
+      "title": "Reading a Room: The Event Photographer's Superpower",
+      "date": "2026-04-27",
+      "status": "live",
+      "duration": 142,
+      "buzzId": 18975989
+    },
+    {
+      "num": 15,
+      "title": "Night Mode: When to Use It and When to Skip It",
+      "date": "2026-04-28",
+      "status": "live",
+      "duration": 146,
+      "buzzId": 18975990
+    },
+    {
+      "num": 16,
+      "title": "Shoot Through Things for Instant Depth",
+      "date": "2026-04-29",
+      "status": "live",
+      "duration": 138,
+      "buzzId": 18975991
+    },
+    {
+      "num": 17,
+      "title": "Freelensing: The DIY Tilt-Shift Effect",
+      "date": "2026-04-30",
+      "status": "live",
+      "duration": 146,
+      "buzzId": 18975992
+    },
+    {
+      "num": 18,
+      "title": "Why You Should Shoot in Aperture Priority 90% of the Time",
+      "date": "2026-05-01",
+      "status": "live",
+      "duration": 148,
+      "buzzId": 18975993
+    },
+    {
+      "num": 19,
+      "title": "Framing Within Frames: The Instant Depth Trick",
+      "date": "2026-05-04",
+      "status": "live",
+      "duration": 152,
+      "buzzId": 18975994
+    },
+    {
+      "num": 20,
+      "title": "The Ugly Light Hours Nobody Talks About",
+      "date": "2026-05-05",
+      "status": "live",
+      "duration": 175,
+      "buzzId": 18975995
+    },
+    {
+      "num": 21,
+      "title": "Directing Groups Without Being a Drill Sergeant",
+      "date": "2026-05-06",
+      "status": "scheduled",
+      "duration": 153,
+      "buzzId": 18977130
+    },
+    {
+      "num": 22,
+      "title": "RAW vs. JPEG -- The One-Sentence Decision Framework",
+      "date": "2026-05-07",
+      "status": "scheduled",
+      "duration": 154,
+      "buzzId": 18977131
+    },
+    {
+      "num": 23,
+      "title": "The Grid Overlay You're Not Using on Your Phone",
+      "date": "2026-05-08",
+      "status": "scheduled",
+      "duration": 154,
+      "buzzId": 18977132
+    },
+    {
+      "num": 24,
+      "title": "Skin Retouching -- The Zoom-Out Test",
+      "date": "2026-05-11",
+      "status": "scheduled",
+      "duration": 112,
+      "buzzId": 18977134
+    },
+    {
+      "num": 25,
+      "title": "Flash Isn't Scary -- The Bounce Flash Technique",
+      "date": "2026-05-12",
+      "status": "scheduled",
+      "duration": 143,
+      "buzzId": 18977135
+    },
+    {
+      "num": 26,
+      "title": "The Pre-Ceremony Checklist That Prevents Panic",
+      "date": "2026-05-13",
+      "status": "scheduled",
+      "duration": 158,
+      "buzzId": 18977136
+    },
+    {
+      "num": 27,
+      "title": "Shutter Speed for Sharp Handheld Photos -- The Reciprocal Rule",
+      "date": "2026-05-14",
+      "status": "scheduled",
+      "duration": 151,
+      "buzzId": 18977137
+    },
+    {
+      "num": 28,
+      "title": "Leading Lines Aren't Just Roads and Fences",
+      "date": "2026-05-15",
+      "status": "scheduled",
+      "duration": 139,
+      "buzzId": 18977138
+    },
+    {
+      "num": 29,
+      "title": "Why Your Sunset Photos Never Look as Good as Real Life",
+      "date": "2026-05-18",
+      "status": "scheduled",
+      "duration": 155,
+      "buzzId": 18977140
+    },
+    {
+      "num": 30,
+      "title": "How to Light a Face with Just a Window",
+      "date": "2026-05-19",
+      "status": "scheduled",
+      "duration": 155,
+      "buzzId": 18977142
+    },
+    {
+      "num": 31,
+      "title": "The Exposure Compensation Dial Is Your Best Friend",
+      "date": "2026-05-20",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 32,
+      "title": "Negative Space: What You Leave Out Matters More",
+      "date": "2026-05-21",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 33,
+      "title": "The Five-Light Setup You Already Own",
+      "date": "2026-05-22",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 34,
+      "title": "Photographing Kids: The Whisper Technique",
+      "date": "2026-05-25",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 35,
+      "title": "The 0.5x Lens on Your Phone Is a Secret Weapon",
+      "date": "2026-05-26",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 36,
+      "title": "Color Grading vs. Color Correction: Know the Difference",
+      "date": "2026-05-27",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 37,
+      "title": "The Detail Shot Sequence That Tells a Complete Story",
+      "date": "2026-05-28",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 38,
+      "title": "How to Photograph Someone Who Hates Having Their Photo Taken",
+      "date": "2026-05-29",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 39,
+      "title": "Double Exposures In-Camera: Simpler Than You Think",
+      "date": "2026-06-01",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 40,
+      "title": "Memory Cards: Speed Classes Actually Matter",
+      "date": "2026-06-02",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 41,
+      "title": "The Histogram: Your Photo's Hidden Report Card",
+      "date": "2026-06-03",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 42,
+      "title": "The Rule of Odds: Why Three Is Better Than Four",
+      "date": "2026-06-04",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 43,
+      "title": "Hard Light vs. Soft Light: The Size Secret",
+      "date": "2026-06-05",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 44,
+      "title": "How to Get Real Smiles in Posed Photos",
+      "date": "2026-06-08",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 45,
+      "title": "First Look vs. Traditional Reveal: The Photographer's Perspective",
+      "date": "2026-06-09",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 46,
+      "title": "Editing on Your Phone: The Three Apps That Actually Work",
+      "date": "2026-06-10",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 47,
+      "title": "Batch Editing: How to Process 500 Wedding Photos in 2 Hours",
+      "date": "2026-06-11",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 48,
+      "title": "The Guest Photo Trick Every Wedding Photographer Knows",
+      "date": "2026-06-12",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 49,
+      "title": "Light Painting with a Slow Shutter",
+      "date": "2026-06-15",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 50,
+      "title": "Tripods: When You Actually Need One",
+      "date": "2026-06-16",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 51,
+      "title": "ISO Isn't Film Speed Anymore",
+      "date": "2026-06-17",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 52,
+      "title": "The Power of Layers: Foreground, Subject, Background",
+      "date": "2026-06-18",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 53,
+      "title": "Golden Hour Is Overrated. Blue Hour Is Magic.",
+      "date": "2026-06-19",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 54,
+      "title": "Eye Contact vs. Looking Away: When Each Works",
+      "date": "2026-06-22",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 55,
+      "title": "Second Shooting: The Best Education Money Can't Buy",
+      "date": "2026-06-23",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 56,
+      "title": "The Lock-Focus Trick for Action Shots on Your Phone",
+      "date": "2026-06-24",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 57,
+      "title": "Cropping for Impact: Tighter Is Almost Always Better",
+      "date": "2026-06-25",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 58,
+      "title": "Clean Your Phone Lens. Seriously.",
+      "date": "2026-06-26",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 59,
+      "title": "Prism Photography: Rainbows and Reflections for $10",
+      "date": "2026-06-29",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 60,
+      "title": "Prime Lenses vs. Zooms: The Honest Tradeoff",
+      "date": "2026-06-30",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 61,
+      "title": "Metering Modes: When to Switch from Evaluative",
+      "date": "2026-07-01",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 62,
+      "title": "Symmetry: When Breaking the Rule of Thirds Is Right",
+      "date": "2026-07-02",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 63,
+      "title": "Reflectors: The Most Underused Tool in Portrait Photography",
+      "date": "2026-07-03",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 64,
+      "title": "Posing Hands: The Detail That Separates Pros from Amateurs",
+      "date": "2026-07-06",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 65,
+      "title": "The Reception Lighting Setup That Works Every Time",
+      "date": "2026-07-07",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 66,
+      "title": "The Hidden Camera Settings Menu That Changes Everything",
+      "date": "2026-07-08",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 67,
+      "title": "The Before/After Trap: How Over-Editing Happens",
+      "date": "2026-07-09",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 68,
+      "title": "The Negative Space Rule That Makes Photos Breathe",
+      "date": "2026-07-10",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 69,
+      "title": "Drag the Shutter: Motion Blur at Events on Purpose",
+      "date": "2026-07-13",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 70,
+      "title": "Sensor Size Explained Without the Jargon",
+      "date": "2026-07-14",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 71,
+      "title": "Focus and Recompose: The Technique You'll Use Daily",
+      "date": "2026-07-15",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 72,
+      "title": "The Diagonal Principle: Instant Energy in Static Scenes",
+      "date": "2026-07-16",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 73,
+      "title": "Backlighting: Shooting Into the Sun on Purpose",
+      "date": "2026-07-17",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 74,
+      "title": "Body Angles: Why Nobody Should Face the Camera Straight On",
+      "date": "2026-07-20",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 75,
+      "title": "Rain Plans: Why Bad Weather Makes Better Wedding Photos",
+      "date": "2026-07-21",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 76,
+      "title": "Shooting Through Glass and Reflections",
+      "date": "2026-07-22",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 77,
+      "title": "The Dehaze Slider: One Click, Instant Drama",
+      "date": "2026-07-23",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 78,
+      "title": "How to Pose Someone Who Says They're Not Photogenic",
+      "date": "2026-07-24",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 79,
+      "title": "Forced Perspective: Making Big Things Small and Small Things Big",
+      "date": "2026-07-27",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 80,
+      "title": "Lens Filters Worth Owning (and Ones That Are a Waste of Money)",
+      "date": "2026-07-28",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 81,
+      "title": "Auto ISO: The Setting You Should Stop Fighting",
+      "date": "2026-07-29",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 82,
+      "title": "Filling the Frame: When Close Is Not Close Enough",
+      "date": "2026-07-30",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 83,
+      "title": "The Direction of Light Changes Everything",
+      "date": "2026-07-31",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 84,
+      "title": "Environmental Portraits: Context Is Character",
+      "date": "2026-08-03",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 85,
+      "title": "The Exit: Sparklers, Confetti, and How to Not Blow It",
+      "date": "2026-08-04",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 86,
+      "title": "Live Photos: The Feature You Keep Accidentally Deleting",
+      "date": "2026-08-05",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 87,
+      "title": "Straightening: The Two-Second Edit That Matters Most",
+      "date": "2026-08-06",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 88,
+      "title": "The Lens You Should Buy Before Any Other Upgrade",
+      "date": "2026-08-07",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 89,
+      "title": "Long Exposure Waterfalls: The Silky Water Effect",
+      "date": "2026-08-10",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 90,
+      "title": "Camera Bags: Think About Access, Not Capacity",
+      "date": "2026-08-11",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 91,
+      "title": "Focus Stacking: When One Focus Point Isn't Enough",
+      "date": "2026-08-12",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 92,
+      "title": "Color Theory for Photographers: Complementary Colors",
+      "date": "2026-08-13",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 93,
+      "title": "The Inverse Square Law in Plain English",
+      "date": "2026-08-14",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 94,
+      "title": "Posing Couples: The Connection Prompts That Create Real Moments",
+      "date": "2026-08-17",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 95,
+      "title": "Unplugged Ceremonies: How to Handle Guest Phones",
+      "date": "2026-08-18",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 96,
+      "title": "Panorama Mode: Beyond Basic Landscapes",
+      "date": "2026-08-19",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 97,
+      "title": "Presets Are Starting Points, Not Destinations",
+      "date": "2026-08-20",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 98,
+      "title": "The One Slider Edit That Fixes Flat Photos",
+      "date": "2026-08-21",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 99,
+      "title": "Shooting Through Objects: The Foreground Blur Trick",
+      "date": "2026-08-24",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 100,
+      "title": "The Minimum Viable Gear Kit for Any Specialty",
+      "date": "2026-08-25",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    }
+  ]
+}

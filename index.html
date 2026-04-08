@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f0f13">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.json">
+<title>Podcast Dashboard</title>
+<style>
+:root {
+  --bg: #0f0f13;
+  --bg-card: #1a1a22;
+  --bg-card-hover: #222230;
+  --bg-header: #0a0a0f;
+  --text: #e8e8f0;
+  --text-dim: #6e6e80;
+  --border: #2a2a38;
+  --red: #e05252;
+  --red-bg: #3a1a1a;
+  --orange: #d4a843;
+  --orange-bg: #3a3016;
+  --blue: #4a8cd4;
+  --blue-bg: #162a3a;
+  --green: #3dba6d;
+  --green-bg: #163a22;
+  --purple: #9370db;
+  --purple-bg: #261a3a;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  --radius: 8px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Header ────────────────────────────────────────────────────────────── */
+.header {
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.header h1 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.header h1 .accent { color: var(--purple); }
+.last-updated {
+  font-size: 11px;
+  color: var(--text-dim);
+  font-family: var(--mono);
+}
+
+/* ── Tab nav ───────────────────────────────────────────────────────────── */
+.tabs {
+  display: flex;
+  gap: 2px;
+  padding: 8px 20px;
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tab {
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-dim);
+  background: transparent;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition: all 0.15s;
+  font-family: var(--font);
+}
+.tab:hover { color: var(--text); background: var(--bg-card); }
+.tab.active { color: var(--text); background: var(--bg-card); border-color: var(--border); }
+
+/* ── Content area ──────────────────────────────────────────────────────── */
+.content { padding: 20px; max-width: 1200px; margin: 0 auto; }
+
+/* ── Priority Queue ────────────────────────────────────────────────────── */
+.queue-section {
+  margin-bottom: 28px;
+}
+.queue-section h2 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+.queue-section h2 .count {
+  color: var(--purple);
+  font-family: var(--mono);
+}
+
+.queue-card {
+  display: grid;
+  grid-template-columns: 8px 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 6px;
+  transition: background 0.15s;
+}
+.queue-card:hover { background: var(--bg-card-hover); }
+.queue-card .show-pip {
+  width: 8px;
+  height: 32px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.queue-card .info {
+  min-width: 0;
+}
+.queue-card .ep-title {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.queue-card .ep-meta {
+  font-size: 12px;
+  color: var(--text-dim);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.queue-card .show-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+.queue-card .date-col {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  text-align: right;
+}
+.queue-card .date-col .days-label {
+  font-size: 11px;
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.status-script { background: var(--red-bg); color: var(--red); }
+.status-produced { background: var(--orange-bg); color: var(--orange); }
+.status-scheduled { background: var(--blue-bg); color: var(--blue); }
+.status-live { background: var(--green-bg); color: var(--green); }
+.status-review { background: var(--purple-bg); color: var(--purple); }
+
+/* ── Pipeline Summary ──────────────────────────────────────────────────── */
+.pipeline-grid {
+  display: grid;
+  gap: 16px;
+}
+.pipeline-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.pipeline-card:hover { background: var(--bg-card-hover); border-color: #3a3a48; }
+.pipeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.pipeline-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.pipeline-header .pct {
+  font-family: var(--mono);
+  font-size: 20px;
+  font-weight: 700;
+}
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--border);
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 12px;
+}
+.progress-bar .seg {
+  height: 100%;
+  transition: width 0.3s;
+}
+.pipeline-stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.pipeline-stat {
+  font-size: 12px;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.pipeline-stat .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.pipeline-stat .num {
+  font-family: var(--mono);
+  font-weight: 700;
+  color: var(--text);
+}
+.pipeline-next {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.pipeline-next strong { color: var(--text); }
+
+/* ── Overall stats row ─────────────────────────────────────────────────── */
+.overall-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.overall-stat {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+}
+.overall-stat .big {
+  font-size: 28px;
+  font-weight: 800;
+  font-family: var(--mono);
+  line-height: 1;
+}
+.overall-stat .label {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+/* ── Calendar view ─────────────────────────────────────────────────────── */
+.cal-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.cal-tab {
+  padding: 6px 14px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-dim);
+  transition: all 0.15s;
+  font-family: var(--font);
+}
+.cal-tab:hover { color: var(--text); }
+.cal-tab.active { color: #fff; }
+
+.cal-month-header {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 20px 0 8px;
+  color: var(--text);
+}
+.cal-grid {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.cal-grid.cols-5 { grid-template-columns: repeat(5, 1fr); }
+.cal-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.cal-day-header {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-align: center;
+  padding: 4px;
+}
+.cal-cell {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px;
+  min-height: 60px;
+  font-size: 12px;
+  transition: background 0.15s;
+}
+.cal-cell:hover { background: var(--bg-card-hover); }
+.cal-cell.empty { background: transparent; border-color: transparent; }
+.cal-cell .cal-date {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-bottom: 2px;
+}
+.cal-cell .cal-ep-num {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.cal-cell .cal-title {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Responsive ────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .content { padding: 12px; }
+  .header { padding: 12px 16px; }
+  .tabs { padding: 6px 12px; }
+  .queue-card {
+    grid-template-columns: 6px 1fr;
+    gap: 8px;
+  }
+  .queue-card .show-tag { display: none; }
+  .queue-card .date-col { grid-column: 2; }
+  .cal-grid.cols-5 { grid-template-columns: repeat(3, 1fr); }
+  .cal-cell { min-height: 48px; padding: 6px; }
+  .overall-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Loading/error ─────────────────────────────────────────────────────── */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-dim);
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <h1><span class="accent">Sticky Note</span> Production Console</h1>
+    <div class="last-updated" id="lastUpdated"></div>
+  </div>
+</div>
+
+<div class="tabs" id="tabs">
+  <div class="tab active" data-view="queue">Priority Queue</div>
+  <div class="tab" data-view="pipeline">Pipeline</div>
+  <div class="tab" data-view="calendar">Calendar</div>
+</div>
+
+<div class="content" id="content">
+  <div class="loading">Loading podcast data...</div>
+</div>
+
+<script>
+// ── Config ──────────────────────────────────────────────────────────────────
+const SHOWS = ['dits', 'photography', 'wow', 'rd'];
+const DATA_PATH = 'data/';
+let allShows = {};
+let activeView = 'queue';
+let activeCalShow = 'dits';
+
+// ── Status logic (mirrors each calendar's effectiveStatus) ──────────────────
+function todayIso() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+const WOW_REVIEW_CUTOFF = "2026-05-04";
+
+function effectiveStatus(ep, showSlug) {
+  const today = todayIso();
+
+  // Why of Words has a special "review" status
+  if (showSlug === 'wow') {
+    if (ep.buzzId && ep.date <= today) return 'live';
+    if (ep.buzzId && ep.date >= WOW_REVIEW_CUTOFF) return 'review';
+    if (ep.buzzId && ep.date > today) return 'scheduled';
+    return ep.status;
+  }
+
+  // Deep in the Stacks - status is stored directly
+  if (showSlug === 'dits') {
+    return ep.status;
+  }
+
+  // Photography & Required Drinking
+  if ((ep.status === 'live' || ep.status === 'scheduled') && ep.date > today) return 'scheduled';
+  if (ep.status === 'live' && ep.date <= today) return 'live';
+  return ep.status;
+}
+
+// ── Data loading ────────────────────────────────────────────────────────────
+async function loadData() {
+  const results = await Promise.all(
+    SHOWS.map(async slug => {
+      const resp = await fetch(`${DATA_PATH}${slug}.json`);
+      return resp.json();
+    })
+  );
+  results.forEach(show => { allShows[show.slug] = show; });
+}
+
+// ── Helpers ─────────────────────────────────────────────────────────────────
+function fmtDate(iso) {
+  if (!iso) return '--';
+  const [y, m, d] = iso.split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+function daysUntil(iso) {
+  if (!iso) return Infinity;
+  const today = new Date(todayIso() + 'T00:00:00');
+  const target = new Date(iso + 'T00:00:00');
+  return Math.round((target - today) / 86400000);
+}
+
+function daysLabel(n) {
+  if (n === 0) return 'Today';
+  if (n === 1) return 'Tomorrow';
+  if (n < 0) return `${Math.abs(n)}d overdue`;
+  return `${n}d`;
+}
+
+function statusOrder(s) {
+  return { script: 0, produced: 1, review: 2, scheduled: 3, live: 4 }[s] ?? 2;
+}
+
+function statusLabel(s) {
+  return { live: 'Live', scheduled: 'Scheduled', produced: 'Produced', script: 'Script', review: 'Review' }[s] || s;
+}
+
+function showColor(slug) {
+  return allShows[slug]?.accentColor || '#888';
+}
+
+function showShort(slug) {
+  return { dits: 'DITS', photography: 'PHOTO', wow: 'WOW', rd: 'RD' }[slug] || slug.toUpperCase();
+}
+
+// ── Tab switching ───────────────────────────────────────────────────────────
+document.getElementById('tabs').addEventListener('click', e => {
+  const tab = e.target.closest('.tab');
+  if (!tab) return;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  activeView = tab.dataset.view;
+  render();
+});
+
+// ── Render dispatcher ───────────────────────────────────────────────────────
+function render() {
+  const el = document.getElementById('content');
+  if (activeView === 'queue') renderQueue(el);
+  else if (activeView === 'pipeline') renderPipeline(el);
+  else if (activeView === 'calendar') renderCalendar(el);
+}
+
+// ── Priority Queue ──────────────────────────────────────────────────────────
+function renderQueue(el) {
+  // Gather all episodes that need work (not live, not scheduled)
+  const items = [];
+  for (const [slug, show] of Object.entries(allShows)) {
+    show.episodes.forEach(ep => {
+      if (ep.num === 0) return; // skip trailers
+      const status = effectiveStatus(ep, slug);
+      if (status === 'live' || status === 'scheduled') return;
+      items.push({ ...ep, showSlug: slug, effectiveStatus: status, _days: daysUntil(ep.date) });
+    });
+  }
+
+  // Sort: nearest due date first, then by production stage (earlier stage = more urgent)
+  items.sort((a, b) => {
+    if (a._days !== b._days) return a._days - b._days;
+    return statusOrder(a.effectiveStatus) - statusOrder(b.effectiveStatus);
+  });
+
+  // Group by urgency
+  const groups = {
+    overdue: { label: 'Overdue', items: [] },
+    today: { label: 'Due Today', items: [] },
+    thisWeek: { label: 'Due This Week', items: [] },
+    nextWeek: { label: 'Due Next Week', items: [] },
+    upcoming: { label: 'Upcoming', items: [] },
+    unscheduled: { label: 'No Date Set', items: [] }
+  };
+
+  items.forEach(item => {
+    const d = item._days;
+    if (d === Infinity || isNaN(d)) groups.unscheduled.items.push(item);
+    else if (d < 0) groups.overdue.items.push(item);
+    else if (d === 0) groups.today.items.push(item);
+    else if (d <= 7) groups.thisWeek.items.push(item);
+    else if (d <= 14) groups.nextWeek.items.push(item);
+    else groups.upcoming.items.push(item);
+  });
+
+  let html = '';
+  for (const [, group] of Object.entries(groups)) {
+    if (group.items.length === 0) continue;
+    const limit = group === groups.upcoming || group === groups.unscheduled ? 20 : group.items.length;
+    const shown = group.items.slice(0, limit);
+    html += `<div class="queue-section">
+      <h2>${group.label} <span class="count">${group.items.length}</span></h2>`;
+    shown.forEach(item => {
+      const d = item._days;
+      const color = showColor(item.showSlug);
+      const epNum = typeof item.num === 'string' ? item.num : `#${item.num}`;
+      html += `<div class="queue-card">
+        <div class="show-pip" style="background:${color}"></div>
+        <div class="info">
+          <div class="ep-title">${epNum} ${escHtml(item.title)}</div>
+          <div class="ep-meta">
+            <span class="status-badge status-${item.effectiveStatus}">${statusLabel(item.effectiveStatus)}</span>
+            <span>${allShows[item.showSlug].show}</span>
+          </div>
+        </div>
+        <span class="show-tag" style="background:${color}22;color:${color}">${showShort(item.showSlug)}</span>
+        <div class="date-col">
+          ${item.date ? fmtDate(item.date) : '--'}
+          ${d !== Infinity && !isNaN(d) ? `<br><span class="days-label">${daysLabel(d)}</span>` : ''}
+        </div>
+      </div>`;
+    });
+    if (group.items.length > limit) {
+      html += `<div style="padding:8px 14px;font-size:12px;color:var(--text-dim)">+ ${group.items.length - limit} more</div>`;
+    }
+    html += '</div>';
+  }
+
+  if (!html) html = '<div class="loading">All caught up -- nothing needs work right now.</div>';
+  el.innerHTML = html;
+}
+
+// ── Pipeline Summary ────────────────────────────────────────────────────────
+function renderPipeline(el) {
+  // Overall stats
+  let totalEps = 0, totalLive = 0, totalScheduled = 0, totalProduced = 0, totalScript = 0;
+  for (const [slug, show] of Object.entries(allShows)) {
+    show.episodes.forEach(ep => {
+      if (ep.num === 0) return;
+      totalEps++;
+      const s = effectiveStatus(ep, slug);
+      if (s === 'live') totalLive++;
+      else if (s === 'scheduled') totalScheduled++;
+      else if (s === 'produced') totalProduced++;
+      else totalScript++;
+    });
+  }
+  const totalDone = totalLive + totalScheduled;
+  const overallPct = totalEps ? Math.round((totalDone / totalEps) * 100) : 0;
+
+  let html = `<div class="overall-stats">
+    <div class="overall-stat"><div class="big">${totalEps}</div><div class="label">Total Episodes</div></div>
+    <div class="overall-stat"><div class="big" style="color:var(--green)">${totalLive}</div><div class="label">Live</div></div>
+    <div class="overall-stat"><div class="big" style="color:var(--blue)">${totalScheduled}</div><div class="label">Scheduled</div></div>
+    <div class="overall-stat"><div class="big" style="color:var(--orange)">${totalProduced}</div><div class="label">Produced</div></div>
+    <div class="overall-stat"><div class="big" style="color:var(--red)">${totalScript}</div><div class="label">Script</div></div>
+    <div class="overall-stat"><div class="big">${overallPct}%</div><div class="label">Done</div></div>
+  </div>`;
+
+  html += '<div class="pipeline-grid">';
+
+  for (const slug of SHOWS) {
+    const show = allShows[slug];
+    if (!show) continue;
+    const color = show.accentColor;
+    const counts = { live: 0, scheduled: 0, produced: 0, review: 0, script: 0 };
+    let total = 0;
+    let nextDue = null;
+
+    show.episodes.forEach(ep => {
+      if (ep.num === 0) return;
+      total++;
+      const s = effectiveStatus(ep, slug);
+      counts[s] = (counts[s] || 0) + 1;
+      if (s !== 'live' && s !== 'scheduled' && ep.date) {
+        if (!nextDue || ep.date < nextDue.date) nextDue = ep;
+      }
+    });
+
+    const done = counts.live + counts.scheduled;
+    const pct = total ? Math.round((done / total) * 100) : 0;
+
+    html += `<div class="pipeline-card">
+      <div class="pipeline-header">
+        <h3 style="color:${color}">${show.show}</h3>
+        <div class="pct" style="color:${color}">${pct}%</div>
+      </div>
+      <div class="progress-bar">
+        <div class="seg" style="width:${(counts.live/total*100)}%;background:var(--green)"></div>
+        <div class="seg" style="width:${(counts.scheduled/total*100)}%;background:var(--blue)"></div>
+        <div class="seg" style="width:${((counts.review||0)/total*100)}%;background:var(--purple)"></div>
+        <div class="seg" style="width:${(counts.produced/total*100)}%;background:var(--orange)"></div>
+      </div>
+      <div class="pipeline-stats">
+        <div class="pipeline-stat"><span class="dot" style="background:var(--green)"></span><span class="num">${counts.live}</span> Live</div>
+        <div class="pipeline-stat"><span class="dot" style="background:var(--blue)"></span><span class="num">${counts.scheduled}</span> Scheduled</div>
+        ${counts.review ? `<div class="pipeline-stat"><span class="dot" style="background:var(--purple)"></span><span class="num">${counts.review}</span> Review</div>` : ''}
+        ${counts.produced ? `<div class="pipeline-stat"><span class="dot" style="background:var(--orange)"></span><span class="num">${counts.produced}</span> Produced</div>` : ''}
+        <div class="pipeline-stat"><span class="dot" style="background:var(--red)"></span><span class="num">${counts.script}</span> Script</div>
+      </div>
+      ${nextDue ? `<div class="pipeline-next">Next due: <strong>#${nextDue.num} ${escHtml(nextDue.title)}</strong> -- ${fmtDate(nextDue.date)} (${daysLabel(daysUntil(nextDue.date))})</div>` : ''}
+    </div>`;
+  }
+
+  html += '</div>';
+  el.innerHTML = html;
+}
+
+// ── Calendar View ───────────────────────────────────────────────────────────
+function renderCalendar(el) {
+  const show = allShows[activeCalShow];
+  if (!show) return;
+
+  // Show tabs
+  let html = '<div class="cal-tabs">';
+  SHOWS.forEach(slug => {
+    const s = allShows[slug];
+    if (!s) return;
+    const active = slug === activeCalShow ? ' active' : '';
+    html += `<div class="cal-tab${active}" data-calshow="${slug}" style="${slug === activeCalShow ? `background:${s.accentColor};border-color:${s.accentColor}` : ''}">${s.show}</div>`;
+  });
+  html += '</div>';
+
+  // Determine grid columns based on schedule
+  const isTueThu = show.schedule === 'tue-thu';
+  const cols = isTueThu ? 2 : 5;
+  const dayHeaders = isTueThu
+    ? ['Tuesday', 'Thursday']
+    : ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+  // Group episodes by month
+  const byMonth = new Map();
+  show.episodes.forEach(ep => {
+    if (!ep.date) return;
+    const key = ep.date.slice(0, 7);
+    if (!byMonth.has(key)) byMonth.set(key, []);
+    byMonth.get(key).push(ep);
+  });
+
+  for (const [monthKey, eps] of byMonth) {
+    const [y, m] = monthKey.split('-').map(Number);
+    const monthLabel = new Date(y, m - 1, 1).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    html += `<div class="cal-month-header">${monthLabel}</div>`;
+    html += `<div class="cal-grid cols-${cols}">`;
+
+    // Day headers
+    dayHeaders.forEach(d => {
+      html += `<div class="cal-day-header">${d.slice(0, 3)}</div>`;
+    });
+
+    // Place episodes in grid by day of week
+    // Group by week
+    const weeks = new Map();
+    eps.forEach(ep => {
+      const d = new Date(ep.date + 'T12:00:00');
+      // Get week key (Monday of the week)
+      const day = d.getDay();
+      const mon = new Date(d);
+      mon.setDate(mon.getDate() - ((day + 6) % 7));
+      const weekKey = mon.toISOString().slice(0, 10);
+      if (!weeks.has(weekKey)) weeks.set(weekKey, new Array(7).fill(null));
+      weeks.get(weekKey)[day] = ep;
+    });
+
+    for (const [, week] of weeks) {
+      const slots = isTueThu ? [week[2], week[4]] : [week[1], week[2], week[3], week[4], week[5]];
+      slots.forEach(ep => {
+        if (!ep) {
+          html += '<div class="cal-cell empty"></div>';
+          return;
+        }
+        const status = effectiveStatus(ep, activeCalShow);
+        const color = show.accentColor;
+        const epNum = typeof ep.num === 'string' ? ep.num : `#${ep.num}`;
+        const displayTitle = ep.artist ? `${ep.artist}` : ep.title.split(' -- ')[0];
+        html += `<div class="cal-cell" style="border-left:3px solid ${color}">
+          <div class="cal-date">${fmtDate(ep.date)}</div>
+          <div class="cal-ep-num">${epNum} <span class="status-badge status-${status}" style="font-size:9px;padding:1px 5px">${statusLabel(status)}</span></div>
+          <div class="cal-title">${escHtml(displayTitle)}</div>
+        </div>`;
+      });
+    }
+    html += '</div>';
+  }
+
+  el.innerHTML = html;
+
+  // Bind calendar show tabs
+  el.querySelectorAll('.cal-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      activeCalShow = tab.dataset.calshow;
+      renderCalendar(el);
+    });
+  });
+}
+
+// ── Utils ───────────────────────────────────────────────────────────────────
+function escHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// ── Init ────────────────────────────────────────────────────────────────────
+(async function init() {
+  try {
+    await loadData();
+    document.getElementById('lastUpdated').textContent = `Updated: ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}`;
+    render();
+  } catch (err) {
+    document.getElementById('content').innerHTML = `<div class="loading" style="color:var(--red)">Failed to load data: ${escHtml(err.message)}</div>`;
+  }
+})();
+</script>
+</body>
+</html>

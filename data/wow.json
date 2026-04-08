@@ -1,0 +1,819 @@
+{
+  "show": "The Why of Words",
+  "slug": "wow",
+  "schedule": "mon-fri",
+  "timezone": "America/New_York",
+  "publishTime": "06:00",
+  "buzzsproutId": null,
+  "accentColor": "#4a7cc9",
+  "episodes": [
+    {
+      "num": 0,
+      "title": "Trailer: The Why of Words",
+      "date": "2026-04-02",
+      "status": "scheduled",
+      "duration": 69,
+      "buzzId": 18948983
+    },
+    {
+      "num": 1,
+      "title": "Salary -- Why Romans Were Paid in Salt",
+      "date": "2026-04-06",
+      "status": "scheduled",
+      "duration": 129,
+      "buzzId": 18949153
+    },
+    {
+      "num": 2,
+      "title": "Bankrupt -- The Broken Bench That Ended Businesses",
+      "date": "2026-04-07",
+      "status": "scheduled",
+      "duration": 103,
+      "buzzId": 18949154
+    },
+    {
+      "num": 3,
+      "title": "Fee -- Medieval Wealth Was Actually Just Cows",
+      "date": "2026-04-08",
+      "status": "scheduled",
+      "duration": 119,
+      "buzzId": 18949155
+    },
+    {
+      "num": 4,
+      "title": "Budget -- Your Finances Started as a Leather Pouch",
+      "date": "2026-04-09",
+      "status": "scheduled",
+      "duration": 107,
+      "buzzId": 18949156
+    },
+    {
+      "num": 5,
+      "title": "Freelance -- The Medieval Mercenary Behind Your Side Hustle",
+      "date": "2026-04-10",
+      "status": "scheduled",
+      "duration": 115,
+      "buzzId": 18949157
+    },
+    {
+      "num": 6,
+      "title": "Whiskey -- Medieval Monks Called It Water of Life",
+      "date": "2026-04-13",
+      "status": "scheduled",
+      "duration": 101,
+      "buzzId": 18949160
+    },
+    {
+      "num": 7,
+      "title": "Companion -- Someone You Literally Break Bread With",
+      "date": "2026-04-14",
+      "status": "scheduled",
+      "duration": 102,
+      "buzzId": 18949161
+    },
+    {
+      "num": 8,
+      "title": "Ketchup -- A Chinese Fish Sauce With No Tomatoes",
+      "date": "2026-04-15",
+      "status": "scheduled",
+      "duration": 105,
+      "buzzId": 18949162
+    },
+    {
+      "num": 9,
+      "title": "Avocado -- Five Centuries of Mispronouncing an Aztec Word",
+      "date": "2026-04-16",
+      "status": "scheduled",
+      "duration": 113,
+      "buzzId": 18949163
+    },
+    {
+      "num": 10,
+      "title": "Breakfast -- Breaking a Sacred Medieval Religious Fast",
+      "date": "2026-04-17",
+      "status": "scheduled",
+      "duration": 112,
+      "buzzId": 18949164
+    },
+    {
+      "num": 11,
+      "title": "Deadline -- A Disputed Origin From Prison Yards and Printing Presses",
+      "date": "2026-04-20",
+      "status": "scheduled",
+      "duration": 115,
+      "buzzId": 18949166
+    },
+    {
+      "num": 12,
+      "title": "Slogan -- The Scottish War Cry Behind Every Ad Campaign",
+      "date": "2026-04-21",
+      "status": "scheduled",
+      "duration": 106,
+      "buzzId": 18949167
+    },
+    {
+      "num": 13,
+      "title": "Berserk -- Viking Bear-Warriors Who Wore Animal Skins",
+      "date": "2026-04-22",
+      "status": "scheduled",
+      "duration": 116,
+      "buzzId": 18949168
+    },
+    {
+      "num": 14,
+      "title": "Campaign -- Every Election Is Still a Military Operation",
+      "date": "2026-04-23",
+      "status": "scheduled",
+      "duration": 107,
+      "buzzId": 18949169
+    },
+    {
+      "num": 15,
+      "title": "Torpedo -- Named After an Electric Fish That Stuns Its Prey",
+      "date": "2026-04-24",
+      "status": "scheduled",
+      "duration": 107,
+      "buzzId": 18949170
+    },
+    {
+      "num": 16,
+      "title": "Jeans -- America's Most Iconic Pants Come From Italy",
+      "date": "2026-04-27",
+      "status": "scheduled",
+      "duration": 99,
+      "buzzId": 18949171
+    },
+    {
+      "num": 17,
+      "title": "Cardigan -- Named After a General Who Lost a Famous Battle",
+      "date": "2026-04-28",
+      "status": "scheduled",
+      "duration": 102,
+      "buzzId": 18949172
+    },
+    {
+      "num": 18,
+      "title": "Bikini -- Named After a Nuclear Test Site in the Pacific",
+      "date": "2026-04-29",
+      "status": "scheduled",
+      "duration": 102,
+      "buzzId": 18949173
+    },
+    {
+      "num": 19,
+      "title": "Cravat -- Croatian Soldiers Made This the Height of Fashion",
+      "date": "2026-04-30",
+      "status": "scheduled",
+      "duration": 107,
+      "buzzId": 18949174
+    },
+    {
+      "num": 20,
+      "title": "Pajamas -- Indian Leg-Garments Became British Sleepwear",
+      "date": "2026-05-01",
+      "status": "scheduled",
+      "duration": 104,
+      "buzzId": 18949175
+    },
+    {
+      "num": 21,
+      "title": "Muscle -- Romans Saw a Little Mouse Under Your Skin",
+      "date": "2026-05-04",
+      "status": "scheduled",
+      "duration": 103,
+      "buzzId": 18949176
+    },
+    {
+      "num": 22,
+      "title": "Hysteria -- Ancient Doctors Blamed a Wandering Uterus",
+      "date": "2026-05-05",
+      "status": "scheduled",
+      "duration": 109,
+      "buzzId": 18949177
+    },
+    {
+      "num": 23,
+      "title": "Quarantine -- Venice Invented 40-Day Isolation for the Plague",
+      "date": "2026-05-06",
+      "status": "scheduled",
+      "duration": 115,
+      "buzzId": 18949178
+    },
+    {
+      "num": 24,
+      "title": "Ambulance -- Napoleon's Walking Hospital That Followed Troops Into Battle",
+      "date": "2026-05-07",
+      "status": "scheduled",
+      "duration": 109,
+      "buzzId": 18949179
+    },
+    {
+      "num": 25,
+      "title": "Vaccine -- Named After the Cow That Saved Millions of Lives",
+      "date": "2026-05-08",
+      "status": "scheduled",
+      "duration": 110,
+      "buzzId": 18949180
+    },
+    {
+      "num": 26,
+      "title": "Nice -- This Compliment Originally Meant Stupid and Foolish",
+      "date": "2026-05-11",
+      "status": "scheduled",
+      "duration": 108,
+      "buzzId": 18949181
+    },
+    {
+      "num": 27,
+      "title": "Dunce -- A Brilliant Philosopher Became the Insult for Stupidity",
+      "date": "2026-05-12",
+      "status": "scheduled",
+      "duration": 92,
+      "buzzId": 18949182
+    },
+    {
+      "num": 28,
+      "title": "Bully -- A Word That Used to Mean Sweetheart and Friend",
+      "date": "2026-05-13",
+      "status": "scheduled",
+      "duration": 98,
+      "buzzId": 18949184
+    },
+    {
+      "num": 29,
+      "title": "Cretin -- An Alpine Disease Name That Became a Common Insult",
+      "date": "2026-05-14",
+      "status": "scheduled",
+      "duration": 110,
+      "buzzId": 18949185
+    },
+    {
+      "num": 30,
+      "title": "Moron -- A Real Medical Diagnosis That Became a Playground Slur",
+      "date": "2026-05-15",
+      "status": "scheduled",
+      "duration": 120,
+      "buzzId": 18949186
+    },
+    {
+      "num": 31,
+      "title": "Tsunami -- Japanese Fishermen Named It the Harbor Wave",
+      "date": "2026-05-18",
+      "status": "scheduled",
+      "duration": 119,
+      "buzzId": 18949187
+    },
+    {
+      "num": 32,
+      "title": "Shampoo -- An Indian Massage Technique Bottled and Sold Back",
+      "date": "2026-05-19",
+      "status": "scheduled",
+      "duration": 111,
+      "buzzId": 18949188
+    },
+    {
+      "num": 33,
+      "title": "Kiosk -- Your Airport Snack Stand Was Once an Ottoman Palace",
+      "date": "2026-05-20",
+      "status": "scheduled",
+      "duration": 113,
+      "buzzId": 18949189
+    },
+    {
+      "num": 34,
+      "title": "Zombie -- Haitian Folklore's Fate Worse Than Death",
+      "date": "2026-05-21",
+      "status": "scheduled",
+      "duration": 114,
+      "buzzId": 18949190
+    },
+    {
+      "num": 35,
+      "title": "Loot -- British Colonizers Stole This Word Along With Everything Else",
+      "date": "2026-05-22",
+      "status": "scheduled",
+      "duration": 100,
+      "buzzId": 18949191
+    },
+    {
+      "num": 36,
+      "title": "Panic -- A Half-Goat Greek God Who Terrorized Travelers",
+      "date": "2026-05-25",
+      "status": "scheduled",
+      "duration": 109,
+      "buzzId": 18949192
+    },
+    {
+      "num": 37,
+      "title": "Nostalgia -- A Homesickness So Severe Doctors Said It Could Kill You",
+      "date": "2026-05-26",
+      "status": "scheduled",
+      "duration": 117,
+      "buzzId": 18949193
+    },
+    {
+      "num": 38,
+      "title": "Worry -- Old English for Strangling and Seizing by the Throat",
+      "date": "2026-05-27",
+      "status": "scheduled",
+      "duration": 97,
+      "buzzId": 18949194
+    },
+    {
+      "num": 39,
+      "title": "Enthusiasm -- Ancient Greeks Said a God Was Living Inside You",
+      "date": "2026-05-28",
+      "status": "scheduled",
+      "duration": 118,
+      "buzzId": 18949195
+    },
+    {
+      "num": 40,
+      "title": "Melancholy -- Greeks Blamed Sadness on an Excess of Black Bile",
+      "date": "2026-05-29",
+      "status": "scheduled",
+      "duration": 115,
+      "buzzId": 18949196
+    },
+    {
+      "num": 41,
+      "title": "Disaster -- Every Catastrophe Was Once Blamed on the Stars",
+      "date": "2026-06-01",
+      "status": "scheduled",
+      "duration": 109,
+      "buzzId": 18949197
+    },
+    {
+      "num": 42,
+      "title": "Candidate -- Roman Politicians Wore Bright White Togas to Win Votes",
+      "date": "2026-06-02",
+      "status": "scheduled",
+      "duration": 105,
+      "buzzId": 18949198
+    },
+    {
+      "num": 43,
+      "title": "Sarcasm -- The Greek Word for Tearing Flesh With Words",
+      "date": "2026-06-03",
+      "status": "scheduled",
+      "duration": 109,
+      "buzzId": 18949199
+    },
+    {
+      "num": 44,
+      "title": "Dilapidated -- Latin for Throwing Stones at a Building Until It Falls",
+      "date": "2026-06-04",
+      "status": "scheduled",
+      "duration": 111,
+      "buzzId": 18949200
+    },
+    {
+      "num": 45,
+      "title": "Preposterous -- Latin for Putting Everything in Backwards Order",
+      "date": "2026-06-05",
+      "status": "scheduled",
+      "duration": 115,
+      "buzzId": 18949201
+    },
+    {
+      "num": 46,
+      "title": "Maverick -- A Texas Rancher Who Refused to Brand His Cattle",
+      "date": "2026-06-08",
+      "status": "scheduled",
+      "duration": 111,
+      "buzzId": 18949202
+    },
+    {
+      "num": 47,
+      "title": "Serendipity -- Invented From a Persian Fairy Tale About a Forgotten Island",
+      "date": "2026-06-09",
+      "status": "scheduled",
+      "duration": 103,
+      "buzzId": 18949204
+    },
+    {
+      "num": 48,
+      "title": "Bourbon -- A Celtic God, French Kings, and a Kentucky County",
+      "date": "2026-06-10",
+      "status": "scheduled",
+      "duration": 106,
+      "buzzId": 18949205
+    },
+    {
+      "num": 49,
+      "title": "Denim -- French Aristocrat Fabric That Became Working Class Gold",
+      "date": "2026-06-11",
+      "status": "scheduled",
+      "duration": 108,
+      "buzzId": 18949206
+    },
+    {
+      "num": 50,
+      "title": "Champagne -- A French Region With a Legal Moat Around Its Name",
+      "date": "2026-06-12",
+      "status": "scheduled",
+      "duration": 112,
+      "buzzId": 18949207
+    },
+    {
+      "num": 51,
+      "title": "Robot -- Born in a Czech Play About Enslaved Artificial Workers",
+      "date": "2026-06-15",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 52,
+      "title": "Boss -- Dutch Colonists in New Amsterdam Gave Us This Title",
+      "date": "2026-06-16",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 53,
+      "title": "Sabotage -- A French Wooden Shoe Became the Symbol of Industrial Rebellion",
+      "date": "2026-06-17",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 54,
+      "title": "Manager -- Originally Someone Who Controlled Horses With Their Hands",
+      "date": "2026-06-18",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 55,
+      "title": "Rival -- Two Roman Farmers Fighting Over the Same River",
+      "date": "2026-06-19",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 56,
+      "title": "Sandwich -- A Gambling Earl Too Lazy to Leave the Card Table",
+      "date": "2026-06-22",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 57,
+      "title": "Barbecue -- A Taíno Word That Outlived the People Who Coined It",
+      "date": "2026-06-23",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 58,
+      "title": "Chocolate -- An Aztec Warrior's Bitter Pre-Battle Ritual Drink",
+      "date": "2026-06-24",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 59,
+      "title": "Yogurt -- A Turkish Word for Thickening That Crossed Every Border",
+      "date": "2026-06-25",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 60,
+      "title": "Alcohol -- Named After Arabic Eye Makeup Used by Alchemists",
+      "date": "2026-06-26",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 61,
+      "title": "Assassin -- Medieval Killers Named After the Drug They Supposedly Took",
+      "date": "2026-06-29",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 62,
+      "title": "Lieutenant -- The Rank That Means Holding Someone Else's Place",
+      "date": "2026-06-30",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 63,
+      "title": "Admiral -- Your Navy's Top Commander Has an Arabic Title",
+      "date": "2026-07-01",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 64,
+      "title": "Grenade -- Soldiers Named This Weapon After an Exploding Pomegranate",
+      "date": "2026-07-02",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 65,
+      "title": "Decimate -- Rome's Brutal Punishment of Killing One Soldier in Ten",
+      "date": "2026-07-03",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 66,
+      "title": "Curfew -- A Medieval Order to Cover Your Fire by Dark",
+      "date": "2026-07-06",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 67,
+      "title": "Window -- Vikings Called It the Wind's Eye in Your Wall",
+      "date": "2026-07-07",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 68,
+      "title": "Wardrobe -- Medieval Royalty Stored Their Treasure in This Room",
+      "date": "2026-07-08",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 69,
+      "title": "Corridor -- Italian Palaces Named Hallways After the Act of Running",
+      "date": "2026-07-09",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 70,
+      "title": "Pavilion -- Latin for Butterfly, Because the Tent Flapped Like Wings",
+      "date": "2026-07-10",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 71,
+      "title": "Lunatic -- Romans Believed the Moon Could Drive You Mad",
+      "date": "2026-07-13",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 72,
+      "title": "Pupil -- Romans Saw a Tiny Doll Reflected in Your Eye",
+      "date": "2026-07-14",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 73,
+      "title": "Capillary -- Tiny Blood Vessels Named After a Single Human Hair",
+      "date": "2026-07-15",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 74,
+      "title": "Placebo -- Fake Funeral Mourners Gave Medicine Its Most Powerful Word",
+      "date": "2026-07-16",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 75,
+      "title": "Inoculate -- Doctors Borrowed This Word From Tree-Grafting Gardeners",
+      "date": "2026-07-17",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 76,
+      "title": "Silly -- A Word Meaning Blessed by God That Became an Insult",
+      "date": "2026-07-20",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 77,
+      "title": "Egregious -- A Roman Compliment That Flipped Into the Worst Insult",
+      "date": "2026-07-21",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 78,
+      "title": "Villain -- Medieval Peasants Got Turned Into the Villains of Every Story",
+      "date": "2026-07-22",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 79,
+      "title": "Hussy -- Housewife Was Compressed Into an Insult Over Two Centuries",
+      "date": "2026-07-23",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 80,
+      "title": "Awful -- Once Meant Commanding and Worthy of Your Deepest Fear",
+      "date": "2026-07-24",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 81,
+      "title": "Safari -- An Arabic Word for Journey That Britain Turned Into Adventure",
+      "date": "2026-07-27",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 82,
+      "title": "Tattoo -- Captain Cook's Crew Brought This Polynesian Word Home",
+      "date": "2026-07-28",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 83,
+      "title": "Orangutan -- Malay for Person of the Forest, Not a Scientific Name",
+      "date": "2026-07-29",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 84,
+      "title": "Checkmate -- Persian Chess Players Said the King Is Helpless",
+      "date": "2026-07-30",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 85,
+      "title": "Thug -- A Feared Indian Crime Network Left This Word Behind",
+      "date": "2026-07-31",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 86,
+      "title": "Clue -- Ariadne's Ball of Thread Became the Key to Every Mystery",
+      "date": "2026-08-03",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 87,
+      "title": "Fascinate -- Romans Believed You Were Literally Being Bewitched",
+      "date": "2026-08-04",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 88,
+      "title": "Trivial -- Named After the Crossroads Where Romans Gossiped Daily",
+      "date": "2026-08-05",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 89,
+      "title": "Sycophant -- Ancient Greek Informers Who Possibly Reported Illegal Figs",
+      "date": "2026-08-06",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 90,
+      "title": "Nightmare -- A Medieval Demon That Sat on Your Chest While You Slept",
+      "date": "2026-08-07",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 91,
+      "title": "Influenza -- Italians Blamed the Flu on Planetary Alignment",
+      "date": "2026-08-10",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 92,
+      "title": "Earmark -- Farmers Notched Livestock Ears to Claim Ownership",
+      "date": "2026-08-11",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 93,
+      "title": "Explode -- Romans Clapped So Hard They Drove Actors Off the Stage",
+      "date": "2026-08-12",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 94,
+      "title": "Calculate -- Roman Merchants Counted With Actual Pebbles on a Board",
+      "date": "2026-08-13",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 95,
+      "title": "Cliche -- A French Printing Plate That Stamps Out Dead Language",
+      "date": "2026-08-14",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 96,
+      "title": "Algorithm -- A 9th-Century Mathematician's Name We Forgot We Were Using",
+      "date": "2026-08-17",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 97,
+      "title": "Atlas -- A Flemish Mapmaker Branded His Book After a Titan",
+      "date": "2026-08-18",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 98,
+      "title": "Fiasco -- Italian Theater Turned a Wine Bottle Into a Word for Disaster",
+      "date": "2026-08-19",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 99,
+      "title": "Goodbye -- We've Been Saying a Prayer Every Time We Leave",
+      "date": "2026-08-20",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    },
+    {
+      "num": 100,
+      "title": "Etymology -- Even the Greeks Got Their Own Word Origins Wrong",
+      "date": "2026-08-21",
+      "status": "script",
+      "duration": null,
+      "buzzId": null
+    }
+  ]
+}
